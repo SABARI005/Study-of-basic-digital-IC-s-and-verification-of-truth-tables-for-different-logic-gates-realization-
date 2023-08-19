@@ -1,7 +1,3 @@
-
-# Name:Jayavarthan P
-# Reg No:212222100015
-
 # Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-
 # AIM:
 To study about the different digital IC’s and to verify the truth table in Quartus for the basic logic gates using Verilog programming.
@@ -82,18 +78,21 @@ Y= A⊕B
 
 # Program:
 ```
-module Verificationoflogicgatres	(a,b,y1,y2,y3,y4,y5,y6,y7,y8);
+Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
+Developed by: SABARI S
+RegisterNumber: 212222240085
+
+module assignment1(a,b,ynot,yand,yor,ynand,ynor,yxor,yxnor);
 input a,b;
-output y1,y2,y3,y4,y5,y6,y7,y8;
-not(y1,a);
-not(y2,b);
-and(y3,a,b);
-or(y4,a,b);
-nand(y5,a,b);
-nor(y6,a,b);
-xor(y7,a,b);
-xnor(y8,a,b);
-endmodule
+output ynot,yand,yor,ynand,ynor,yxor,yxnor;
+not(ynot,a);
+and(yand,a,b);
+or(yor,a,b);
+nand(ynand,a,b);
+nor(ynor,a,b);
+xor(yxor,a,b);
+xnor(yxnor,a,b);
+endmodule 
 ```
 # RTL Diagram:
 ![Screenshot (97)](https://github.com/JAYAVARTHAN-P/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/121369281/59de04e4-3fc5-492b-83df-ca21f93a4242)
